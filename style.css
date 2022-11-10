@@ -1,0 +1,171 @@
+* {
+	box-sizing: border-box;
+}
+
+/* == GENERAL STYLES == */
+body {
+	background-color: #1f2937;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header,
+main {
+	margin-inline: 3em;
+	width: 90%;
+}
+
+main {
+	margin-bottom: 2em;
+	position: relative;
+}
+
+/* == TYPOGRAPHY */
+
+h1, 
+.instruction {
+	text-align: center;
+}
+
+h1,
+.get-color-scheme-btn,
+.select-color-mode {
+	color: #d5d4d8;
+}
+
+h1 {
+	letter-spacing: 2px;
+}
+
+.select-color-mode,
+.get-color-scheme-btn {
+	font-size: 1rem;
+}
+
+.color-name {
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+.instruction {
+	font-size: 1.2rem;
+}
+
+/* == LAYOUT */
+
+h1 {
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+
+
+/* Get color section */
+
+.select-color-mode,
+.get-color-scheme-btn {
+	border-radius: 5px;
+}
+
+.get-colors-section {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1em;
+	padding-left: 0;
+}
+
+.color-picker {
+	height: 30px;
+	margin-right: 2em;
+	width: 50px;
+}
+
+.select-color-mode {
+	background-color: #1f2937;
+	margin: 1em 2em 1em 0;
+	padding: 0.4em 0.5em;
+}
+
+.get-color-scheme-btn {
+	background-color: #3d4b60;
+	border: none;
+	cursor: pointer;
+	margin: 0;
+	padding: 0.5em 0.7em;
+}
+
+
+/* Color scheme */
+
+.current-color-container {
+	margin-bottom: 1.5em;
+}
+
+.color-scheme-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	min-height: 55vh;
+	width: 100%;
+}
+
+.color-item {
+	align-items: center;
+	display: flex;
+	gap: 1em;
+}
+
+.color-box {
+	height: 100%;
+	min-width: 60%;
+	width: calc(80% - 8em);
+}
+
+.color-code {
+	margin-inline: 2em;
+}
+
+.instruction {
+	border-radius: 5px;
+	box-shadow: 1px 1px 12px 2px rgba(76, 75, 75, 0.84);
+	left: 5%;
+	opacity: 0.5;
+	padding: 0.7em;
+	position: absolute;
+	top: 50%;
+	visibility: hidden;
+	width: 40%;
+	z-index: 1;
+}
+
+@media (min-width: 520px) {
+	.seed-color {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 750px) {
+	.get-colors-section {
+		justify-content: center;
+	}
+
+	.color-scheme-container {
+		grid-template-columns: repeat(5, 1fr);
+		min-height: 70vh;
+	}
+
+	.color-item {
+		flex-direction: column;
+	}
+
+	.color-box {
+		height: 70%;
+		width: 100%;
+	}
+
+	.instruction {
+		left: 30%;
+		top: 37%;
+	}
+}
