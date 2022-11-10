@@ -4,8 +4,8 @@
 
 /* == GENERAL STYLES == */
 body {
-	background-color: #1f2937;
-	color: white;
+	background-color: #242424;
+	color: #f2f2f2;
 	font-family: "Roboto", sans-serif;
 	margin: 0;
 	padding: 0;
@@ -30,11 +30,13 @@ h1,
 	text-align: center;
 }
 
-h1,
+/* h1,
 .get-color-scheme-btn,
-.select-color-mode {
-	color: #d5d4d8;
-}
+.select-color-mode,
+.seed-color,
+.seed-hex-code {
+	color: #1c1b1b;
+} */
 
 h1 {
 	letter-spacing: 2px;
@@ -51,8 +53,9 @@ h1 {
 }
 
 .instruction {
+	color: black;
 	font-size: 1.2rem;
-	text-shadow: 2px 1px black;
+	text-shadow: 2px 1px white;
 }
 
 /* == LAYOUT */
@@ -85,13 +88,13 @@ h1 {
 }
 
 .select-color-mode {
-	background-color: #1f2937;
+	background-color: #f8f3f3;
 	margin: 1em 2em 1em 0;
 	padding: 0.4em 0.5em;
 }
 
 .get-color-scheme-btn {
-	background-color: #3d4b60;
+	background-color: #f8f3f3;
 	border: none;
 	cursor: pointer;
 	margin: 0;
