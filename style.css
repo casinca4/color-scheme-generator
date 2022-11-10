@@ -18,7 +18,8 @@ main {
 }
 
 main {
-	margin-bottom: 2em;
+	margin: auto;
+	max-width: 900px;
 	position: relative;
 }
 
@@ -51,6 +52,7 @@ h1 {
 
 .instruction {
 	font-size: 1.2rem;
+	text-shadow: 2px 1px black;
 }
 
 /* == LAYOUT */
